@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1000vh;
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    min-width: 450px;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 30px 40px ;
+}
+#newtask{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+#newtask input{
+    width: 70%;
+    padding: 12px;
+    border: 3px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#newtask button{
+    width: 20%;
+    height: 45px;
+    float: right;
+    border: none;
+    background-color:#d10c79;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius:5px;
+    cursor: pointer;
+}
+#tasks{
+    padding: 30px 20px;
+    background-color:white;
+    margin-top: 50px;
+    border-radius:10px;
+}
+.task{
+    height: 50px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9b9c9c;
+}
+.task span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    font-weight:400;
+}
+.task button{
+    background-color: #d10c79;
+    color: white;
+    height: 100%;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+}
